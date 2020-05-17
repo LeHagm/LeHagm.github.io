@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1, 4;
+  font-size: 100%;
+  color: #000;
+  margin: 0;
+}
+
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#navlinks {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+#logo {
+  height: 40px;
+}
+#navigation {
+  display: none;
+}
+#navigation.show {display: none;}
+
+#button {background-color: transparent; border: none;}
+
+/* Media Query für größere Bildschirme */
+@media (min-width: 960px) {
+  #navigation {display: block}
+  #button {display: none;}}
+  /* stellt die ul nebeneinander auf dem großen Gerät*/
+  #navlinks {display: flex;}
+
+  #navlinks li {padding-left: 0.5rem; padding-right: 0.5rem;}
